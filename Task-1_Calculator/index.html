@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    <title>Calcultor</title>
+</head>
+<body>
+    <div class="calculation">
+        <div class="calcultor">
+            <form id="cal">
+                <div class="output-display">
+                    <input type="text" name="display" id="result">
+                </div>
+                <div>
+                    <input type="button" value="AC"  onclick="clr()">
+                    <input type="button" value="DEL" onclick="display.value = display.value.slice( 0 ,-1 ) ">
+                    <input type="button" value="."  onclick="Calculate('.')">
+                    <input type="button" value="+"  onclick="Calculate('+')">
+                </div>
+                <div>
+                    <input type="button" value="7" onclick="Calculate('7')">
+                    <input type="button" value="8" onclick="Calculate('8')">
+                    <input type="button" value="9" onclick="Calculate('9')">
+                    <input type="button" value="-" onclick="Calculate('-')">
+                </div>
+                <div>
+                    <input type="button" value="4" onclick="Calculate('4')">
+                    <input type="button" value="5" onclick="Calculate('5')">
+                    <input type="button" value="6" onclick="Calculate('6')">
+                    <input type="button" value="/" onclick="Calculate('/')">
+                </div>
+                <div>
+                    <input type="button" value="1" onclick="Calculate('1')">
+                    <input type="button" value="2" onclick="Calculate('2')">
+                    <input type="button" value="3" onclick="Calculate('3')">
+                    <input type="button" value="*" onclick="Calculate('*')">
+                </div>
+                <div>
+                    <input type="button" value="00"onclick="dis('00')">
+                    <input type="button" value="0" onclick="dis('0')">
+                    <input type="button" value="=" class="equal-btn" onclick="Result()">
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
